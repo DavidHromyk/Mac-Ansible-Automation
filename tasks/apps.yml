@@ -1,0 +1,20 @@
+---
+- hosts: all
+  tasks:
+
+    - name: Install Applications
+      homebrew_cask:
+        name: spotify
+        state: installed
+    - name: Install Google
+      homebrew_cask:  
+        name: google-chrome
+        state: present
+    - name: Install Viscosity
+      homebrew_cask:
+        name: viscosity
+        state: present
+    - name: Install Firefox
+      homebrew_cask:
+        name: firefox
+        state: present
